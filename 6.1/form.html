@@ -1,1 +1,116 @@
-Aqui ficará o form. 
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+<meta charset= "UTF-8">
+<title>Formulário de cadastro de currículo</title>
+
+<link href= "https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+<link href= "style61.css" rel="stylesheet">
+</head>
+
+<form action="test.php" method="post">
+    <fieldset>
+      <legend><h1>Formulário</h1></legend>
+      
+      <div>
+        <p>Qual o seu nome?</p>
+      <input required="required" type="text" placeholder="Insira seu nome aqui!" maxlength="40">
+      </div>
+<div>
+    <p>Qual o seu e-mail?</p>
+  <input required="required" type="text" placeholder="Insira seu e-mail aqui!" maxlength="50">
+  </div>
+
+  <div>
+    <p>Qual o seu CPF?</p>
+  <input required="required" type="text" placeholder="Insira seu CPF aqui!" maxlength="11">
+  </div>
+
+  <div>
+    <p>Qual o seu endereço?</p>
+  <input required="required" type="text" placeholder="Insira seu endereço aqui!" maxlength="200">
+  </div>
+
+  <div>
+    <p>Qual a sua cidade?</p>
+  <input required="required" type="text" placeholder="Insira sua cidade aqui!" maxlength="28">
+  </div>
+<br>
+<div>
+  <label for="estados">Selecione seu estado:</label>
+  <select id="estados" required="required">
+    <option value="AC">AC</option>
+    <option value="AL">AL</option>
+    <option value="AP">AP</option>
+    <option value="AM">AM</option>
+    <option value="BA">BA</option>
+    <option value="CE">CE</option>
+    <option value="ES">ES</option>
+    <option value="GO">GO</option>
+    <option value="MA">MA</option>
+    <option value="MT">MT</option>
+    <option value="MS">MS</option>
+    <option value="MG">MG</option>
+    <option value="PA">PA</option>
+    <option value="PB">PB</option>
+    <option value="PR">PR</option>
+    <option value="PE">PE</option>
+    <option value="PI">PI</option>
+    <option value="RJ">RJ</option>
+    <option value="RN">RN</option>
+    <option value="RS">RS</option>
+    <option value="SC">SC</option>
+    <option value="SP">SP</option>
+    <option value="SE">SE</option>
+    <option value="TO">TO</option>
+    <option value="DF">DF</option>
+</div>
+  </select>
+
+  <div>
+    <p>Você mora em casa, apartamento, ou possui ambos?</p>
+ <label><input name="casa" id="m1" value="c" type="checkbox">Casa</label>
+ <label><input name="ape" id="m2" value="a" type="checkbox">Apartamento</label>
+  </div>
+    <div>
+        <br>
+        <h2>Dados profissionais</h2>
+        <br>
+        <br>
+     <label for="resumo">Escreva o resumo do seu currículo:</label>
+     <br>
+     <br>
+     <textarea name="curriculoresumido" required="required" maxlength="1000" cols="70" rows="10" placeholder="Conte um pouco das suas últimas experiências profissionais!"></textarea>
+      </div>
+
+      <div>
+        <p>Qual foi o seu último cargo?</p>
+      <input required="required" type="text" placeholder="Insira seu cargo aqui!" maxlength="500">
+      </div>
+
+      <div>
+        <p>Descreva o seu último cargo:</p>
+      <input required="required" type="text" placeholder="Conte mais!" maxlength="500">
+      </div>
+
+      <div>
+        <p>Qual foi a data de início do seu último cargo?</p>
+      <input name="dia" id="d1" value="d" required="required" type="number" placeholder="dd" minlength="2" min="1" max="31">
+      <input name="mês" id="m1" value="m" required="required" type="number" placeholder="mm" minlength="2" min="1" max="12">
+      <input name="ano" id="a1" value="a" required="required" type="number" placeholder="aaaa" minlength="4" number != "0">
+      </div>
+
+ </fieldset>
+</form>
+
+<footer id= "rodape">
+<br>
+Este conteúdo está (literalmente) <strong> em constante desenvolvimento</strong>.
+<br>
+Envie seu feedback via Slack.
+<br>    
+<em> #VQV</em>
+</footer>
+
+</html>
