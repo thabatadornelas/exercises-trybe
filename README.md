@@ -1,1 +1,3 @@
 # exercises-trybe
+
+Using Jest.
