@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <%- include('navbar', {user}); %> <% if (recipes) {%>
+    <div>
+      <h1>Receitas<<!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Página principal</title>
+          </head>
+          <body>
+            <h1>Seja bem-vindo(a) ao Cookmaster!</h1>
+          </body>
+        </html>
+        /h1>
+      <% if (user) {%>
+      <a href="/recipes/new">
+        <button data-testid="nova-receita">Nova Receita</button>
+      </a>
+      <a href="/recipes/search">
+        <button data-testid="buscar-receita">Buscar Receita</button>
+      </a>
+      <a href="/me/recipes">
+        <button data-testid="minhas-receitas">Minhas Receitas</button>
+      </a>
+      <%}%> <% recipes.forEach(recipe => { %>
+      <div>
+        <p>Receita: <%= recipe.name %></p>
+        <p>Autor: <%= recipe.user%></p>
+        <a href="/recipes/<%= recipe.id%>">Ver mais</a>
+      </div>
+      <%})%>
+    </div>
+    <% }%>
+  </body>
+</html>
